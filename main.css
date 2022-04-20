@@ -1,351 +1,203 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html {
-  color: #f27457;
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-html {
-  background-color: #253659;
-  height: 100%;
-  width: 100%;
+  font-size: 16px;
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
-  padding: 0em 2em;
-  font-size: 1.25em;
-  /* height: 100%; */
-  color: #fff;
-  display: flex;
-  justify-content: center;
-}
-
-.flex-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-}
-
-p span {
-  font-family: "Lora", sans-serif;
-}
-
-header,
-footer {
-  /* background-color: #253659; */
-  /* height: 80px; */
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-}
-
-header h1 {
-  font-family: "Lora", sans-serif;
-  font-size: 3em;
-}
-
-main {
-  /* background-color: #253659; */
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  /* border-bottom: 1px solid #fff; */
-}
-main p {
-  font-size: 1.35em;
-}
-
-.flex-items {
-  color: #fff;
-  line-height: 1.5em;
   font-size: 1em;
-  background-color: #253659;
-  width: 30%;
-  height: 200px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-bottom: 1px solid #fff; */
 }
 
-.div-1,
-.div-2 {
-  border-right: 2px solid #03a696;
-  padding-right: 30px;
+.container {
+  max-width: 1200px;
+  /* margin: 0 auto; */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-footer {
-  border-top: 1px solid #fff;
+h1,
+h2,
+h3 {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h1 {
+  /* font-size: 30px; */
+  font-size: 1.875em;
+}
+h2 {
+  /* font-size: 18px; */
+  font-size: 1.125em;
+}
+h3 {
+  /* font-size: 12px; */
+  font-size: 0.75em;
 }
 
-footer i {
-  padding: 30px 20px 0 0;
+p {
+  /* font-size: 14px; */
+  font-size: 0.875em;
+  line-height: 1.3125em;
+  /* padding: 0 30px; */
 }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-  display: none !important;
-}
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
+ul {
   margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+/*The widths are in a percentage!*/
+header {
+  /* height: 110px; */
+  border-bottom: 3px solid #77a466;
+  /* margin: 0 auto; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+header h1 {
+  /* float: left; */
+  margin: 0;
+  padding: 38px 0;
+  border-bottom: 3px solid #77a466;
+  width: 100%;
+}
+header h1 span {
+  color: #77a466;
 }
 
-.clearfix:after {
-  clear: both;
+header nav {
+  /* float: right; */
+  width: 100%;
+  padding: 20px 0;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  text-transform: uppercase;
+  font-weight: 700;
+  /* font-size: 14px; */
+  font-size: 0.875em;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  width: 100%;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #77a466;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-/* If you'd like to try a different layout on Desktop and larger screens: */
-@media (min-width: 1200px) {
-  #div-1,
-  #div-2 {
-    /* set your flex value to 1 50% */
-  }
-
-  #div-3 {
-    /* set your flex value to 1 100% */
-  }
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+  /* margin: 0 auto; */
+  /* clear: both; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/* .main-image {
+  /* height: auto; */
+/* float: left; */
+/* width: 100%;
+}  */
+.main-image img {
+  width: 100%;
+  border-bottom: 3px solid #77a466;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+.main-title {
+  height: auto;
+  /* float: left; */
+}
+.main-title h2 {
+  text-align: left;
+  padding: 5px 0;
+  color: #77a466;
+}
+.main-title p {
+  font-size: 1em;
+  /* font-size: 16px; */
+  line-height: 1.5625em;
+}
 
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+.section-one,
+.section-two,
+.section-three {
+  width: 100%;
+  /* height: auto; */
+  /* float: left; */
+  border-top: 1px solid #eee;
+}
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+.section-one h3 {
+  padding: 10px 0;
+}
 
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
+.section-two {
+  /* border-left: 1px solid #eee;
+  border-right: 1px solid #eee; */
+}
 
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+.section-two h3,
+.section-three h3 {
+  padding: 10px 30px;
+}
 
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  padding: 10px 0;
+  color: #77a466;
+}
 
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
+.reviews {
+  color: #333;
+  /* font-size: 16px; */
+  font-size: 1em;
+  line-height: 1.3125em;
+}
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+.address {
+  /* font-size: 16px; */
+  font-size: 1em;
+  line-height: 1.5em;
+}
 
-  /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+/*The widths are in a percentage!*/
+footer {
+  /* height: 50px; */
+  border-top: 3px solid #eee;
+  /* margin: 0 auto; */
+  /* clear: both; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer span {
+  font-family: "Galada", cursive;
+  text-transform: lowercase;
+  color: #77a466;
+  /* font-size: 14px; */
+  font-size: 0.875em;
 }
